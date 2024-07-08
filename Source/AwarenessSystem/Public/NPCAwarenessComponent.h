@@ -7,7 +7,7 @@
 #include "Components/ActorComponent.h"
 #include "NPCAwarenessComponent.generated.h"
 
-UCLASS(ClassGroup=(Custom), Blueprintable)
+UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
 class UNPCInfoValue : public UObject
 {
 	GENERATED_BODY()
