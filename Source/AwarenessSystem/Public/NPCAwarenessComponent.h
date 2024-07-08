@@ -18,7 +18,7 @@ public:
 	
 };
 
-UCLASS(ClassGroup=(Custom), Blueprintable)
+UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
 class UNPCInfoFloatValue : public UNPCInfoValue
 {
 	GENERATED_BODY()
@@ -36,18 +36,18 @@ public:
 	
 };
 
-UCLASS(ClassGroup=(Custom), Blueprintable)
+UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
 class UNPCInfo : public UObject
 {
 	GENERATED_BODY()
 
 	// Landmark information about the memory (i.e. "near the sea")
-	UPROPERTY()
+	UPROPERTY(EditAnywhere)
 	FGameplayTag Tag;
 
 	
 	// Discernable information regarding the landmark ("i.e. distance:5km, weather:windy, suspicious:false"
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Instanced)
 	TArray<UNPCInfoValue*> Values;
 	
 public:
@@ -65,10 +65,10 @@ public:
 	// Sets default values for this component's properties
 	UNPCAwarenessComponent();
 	
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Instanced)
 	TArray<UNPCInfo*> Context;
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, Instanced)
 	TArray<UNPCInfo*> Memory;
 	
 protected:
