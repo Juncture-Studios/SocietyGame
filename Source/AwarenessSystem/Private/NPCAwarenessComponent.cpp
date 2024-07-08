@@ -9,6 +9,10 @@ UNPCInfo::UNPCInfo()
 	
 }
 
+UNPCInfoValue::UNPCInfoValue()
+{
+}
+
 UNPCInfoFloatValue::UNPCInfoFloatValue()
 {
 	

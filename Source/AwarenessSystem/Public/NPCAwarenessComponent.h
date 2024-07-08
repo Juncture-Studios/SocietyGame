@@ -14,7 +14,11 @@ class UNPCInfoValue : public UObject
 
 public:
 
-	UNPCInfoValue() = default;
+	// "i.e. distance"
+	UPROPERTY(EditAnywhere)
+	FGameplayTag Descriptor;
+
+	UNPCInfoValue();
 	
 };
 
@@ -25,10 +29,6 @@ class UNPCInfoFloatValue : public UNPCInfoValue
 
 public:
 	UNPCInfoFloatValue();
-
-	// "i.e. distance"
-	UPROPERTY(EditAnywhere)
-	FGameplayTag Descriptor;
 
 	// "i.e. 5 units"
 	UPROPERTY(EditAnywhere)
