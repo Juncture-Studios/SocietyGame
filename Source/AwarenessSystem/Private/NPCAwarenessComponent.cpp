@@ -3,21 +3,6 @@
 
 #include "NPCAwarenessComponent.h"
 
-
-UNPCInfo::UNPCInfo()
-{
-	
-}
-
-UNPCInfoValue::UNPCInfoValue()
-{
-}
-
-UNPCInfoFloatValue::UNPCInfoFloatValue()
-{
-	
-}
-
 // Sets default values for this component's properties
 UNPCAwarenessComponent::UNPCAwarenessComponent()
 {

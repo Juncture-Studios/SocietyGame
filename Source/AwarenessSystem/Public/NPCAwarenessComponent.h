@@ -3,58 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameplayTags.h"
+#include "NPCInfo.h"
 #include "Components/ActorComponent.h"
 #include "NPCAwarenessComponent.generated.h"
-
-UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
-class UNPCInfoValue : public UObject
-{
-	GENERATED_BODY()
-
-public:
-
-	// "i.e. distance"
-	UPROPERTY(EditAnywhere)
-	FGameplayTag Descriptor;
-
-	UNPCInfoValue();
-	
-};
-
-UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
-class UNPCInfoFloatValue : public UNPCInfoValue
-{
-	GENERATED_BODY()
-
-public:
-	UNPCInfoFloatValue();
-
-	// "i.e. 5 units"
-	UPROPERTY(EditAnywhere)
-	float Value;
-	
-};
-
-UCLASS(ClassGroup=(Custom), Blueprintable, EditInlineNew)
-class UNPCInfo : public UObject
-{
-	GENERATED_BODY()
-
-	// Landmark information about the memory (i.e. "near the sea")
-	UPROPERTY(EditAnywhere)
-	FGameplayTag Tag;
-
-	
-	// Discernable information regarding the landmark ("i.e. distance:5km, weather:windy, suspicious:false"
-	UPROPERTY(EditAnywhere, Instanced)
-	TArray<UNPCInfoValue*> Values;
-	
-public:
-
-	UNPCInfo();
-	
-};
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable)
 class AWARENESSSYSTEM_API UNPCAwarenessComponent : public UActorComponent
