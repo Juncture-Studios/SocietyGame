@@ -4,6 +4,7 @@
 #include "DialogueContentCatalogAssetTypeActions.h"
 
 #include "DialogueContentCatalog.h"
+#include "DialogueContentCatalogEditorToolkit.h"
 
 UClass* FDialogueContentCatalogAssetTypeActions::GetSupportedClass() const
 {
@@ -23,4 +24,10 @@ FColor FDialogueContentCatalogAssetTypeActions::GetTypeColor() const
 uint32 FDialogueContentCatalogAssetTypeActions::GetCategories()
 {
 	return EAssetTypeCategories::Misc;
+}
+
+void FDialogueContentCatalogAssetTypeActions::OpenAssetEditor(const TArray<UObject*>& InObjects,
+	TSharedPtr<IToolkitHost> EditWithinLevelEditor)
+{
+	MakeShared<FDialogueContentCatalogEditorToolkit>()->InitEditor(InObjects);
 }

@@ -6,3 +6,13 @@
 UDialogueContentCatalog::UDialogueContentCatalog()
 {
 }
+
+void UDialogueContentCatalog::AddContent()
+{
+	Content.AddDefaulted();
+}
+
+void UDialogueContentCatalog::RemoveContent(const int Index)
+{
+	Content.RemoveAt(Index);
+}

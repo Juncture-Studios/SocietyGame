@@ -16,6 +16,6 @@ public class SocietyGameEditorTarget : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] { "AwarenessSystem", "DialogueSystem", "DialogueEditor" });
+		ExtraModuleNames.AddRange(new string[] { "AwarenessSystem", "DialogueSystem", "DialogueEditor", "DialogueContentAttributes" });
 	}
 }

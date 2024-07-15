@@ -2,3 +2,8 @@
 
 
 #include "DialogueContentAttribute.h"
+
+bool UDialogueContentAttribute::ContainsPhrase(const FString Phrase) const
+{
+	return false;
+}

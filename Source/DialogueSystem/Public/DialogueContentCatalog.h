@@ -7,7 +7,6 @@
 #include "DialogueContentCatalog.generated.h"
 
 class UDialogueContentAttribute;
-class UDialogueVariation;
 
 /*
  * Conceptual content that is expressed by a character. The actual text is specified in a UDialogueVariation.
@@ -18,10 +17,7 @@ struct FDialogueContent
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere)
-	FName Name;
-
-	UPROPERTY(EditAnywhere, Instanced)
-	TArray<UDialogueVariation*> Variations;
+	FText Name;
 
 	UPROPERTY(EditAnywhere, Instanced)
 	TArray<UDialogueContentAttribute*> Attributes;
@@ -42,4 +38,10 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	TArray<FDialogueContent> Content;
+
+	UFUNCTION()
+	void AddContent();
+
+	UFUNCTION()
+	void RemoveContent(const int Index);
 };
