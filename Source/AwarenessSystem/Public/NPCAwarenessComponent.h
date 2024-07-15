@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "NPCInfo.h"
+#include "InfoTreeNode.h"
 #include "Components/ActorComponent.h"
 #include "NPCAwarenessComponent.generated.h"
 
@@ -17,10 +17,10 @@ public:
 	UNPCAwarenessComponent();
 	
 	UPROPERTY(EditAnywhere, Instanced)
-	TArray<UNPCInfo*> Context;
+	UInfoTreeNode* Context;
 
 	UPROPERTY(EditAnywhere, Instanced)
-	TArray<UNPCInfo*> Memory;
+	UInfoTreeNode* Memory;
 	
 protected:
 	// Called when the game starts
