@@ -35,3 +35,11 @@ UStringNode::UStringNode()
 UStringArrayNode::UStringArrayNode()
 {
 }
+
+UTagNode::UTagNode()
+{
+}
+
+UTagArrayNode::UTagArrayNode()
+{
+}

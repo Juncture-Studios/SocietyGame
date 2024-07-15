@@ -116,3 +116,27 @@ public:
 	UPROPERTY()
 	TArray<FString> Value;
 };
+
+UCLASS()
+class INFONODES_API UTagNode : public UInfoNode
+{
+	GENERATED_BODY()
+
+public:
+	UTagNode();
+
+	UPROPERTY()
+	FGameplayTag Value;
+};
+
+UCLASS()
+class INFONODES_API UTagArrayNode : public UInfoNode
+{
+	GENERATED_BODY()
+
+public:
+	UTagArrayNode();
+
+	UPROPERTY()
+	TArray<FGameplayTag> Value;
+};
