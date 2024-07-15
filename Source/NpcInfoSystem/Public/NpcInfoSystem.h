@@ -3,7 +3,7 @@
 #include "CoreMinimal.h"
 #include "Modules/ModuleManager.h"
 
-class FAwarenessSystemModule : public IModuleInterface
+class FNpcInfoSystemModule : public IModuleInterface
 {
 public:
     virtual void StartupModule() override;

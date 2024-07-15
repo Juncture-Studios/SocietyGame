@@ -1,10 +1,10 @@
 ﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "NPCAwarenessComponent.h"
+#include "NpcInfoComponent.h"
 
 // Sets default values for this component's properties
-UNPCAwarenessComponent::UNPCAwarenessComponent()
+UNpcInfoComponent::UNpcInfoComponent()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
 	// off to improve performance if you don't need them.
@@ -15,7 +15,7 @@ UNPCAwarenessComponent::UNPCAwarenessComponent()
 
 
 // Called when the game starts
-void UNPCAwarenessComponent::BeginPlay()
+void UNpcInfoComponent::BeginPlay()
 {
 	Super::BeginPlay();
 	
@@ -23,7 +23,7 @@ void UNPCAwarenessComponent::BeginPlay()
 
 
 // Called every frame
-void UNPCAwarenessComponent::TickComponent(float DeltaTime, ELevelTick TickType,
+void UNpcInfoComponent::TickComponent(float DeltaTime, ELevelTick TickType,
                                            FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);

@@ -10,11 +10,6 @@
 			"LoadingPhase": "Default"
 		},
 		{
-			"Name": "AwarenessSystem",
-			"Type": "Runtime",
-			"LoadingPhase": "Default"
-		},
-		{
 			"Name": "DialogueSystem",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
@@ -26,6 +21,16 @@
 		},
 		{
 			"Name": "DialogueContentAttributes",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "NpcInfoSystem",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "InfoNodes",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

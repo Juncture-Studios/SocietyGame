@@ -102,7 +102,7 @@ bool UInfoTreeNode::ContainsNode(const FGameplayTag InTag, const bool InExact) c
 	{
 		return FindNode(InTag) != nullptr;
 	}
-	if (Descriptor.MatchesTagDepth(InTag))
+	if (Descriptor.MatchesTag(InTag))
 	{
 		return true;
 	}

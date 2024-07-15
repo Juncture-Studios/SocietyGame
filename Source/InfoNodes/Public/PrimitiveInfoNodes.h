@@ -12,7 +12,7 @@
  * 
  */
 UCLASS()
-class UFloatInfoNode : public UInfoNode
+class INFONODES_API UFloatInfoNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -25,7 +25,7 @@ public:
 };
 
 UCLASS()
-class UFloatArrayNode : public UInfoNode
+class INFONODES_API UFloatArrayNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -40,7 +40,7 @@ public:
  * 
  */
 UCLASS()
-class UIntInfoNode : public UInfoNode
+class INFONODES_API UIntInfoNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -52,7 +52,7 @@ public:
 };
 
 UCLASS()
-class UIntArrayNode : public UInfoNode
+class INFONODES_API UIntArrayNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -67,7 +67,7 @@ public:
  * 
  */
 UCLASS()
-class UBoolNode : public UInfoNode
+class INFONODES_API UBoolNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -79,7 +79,7 @@ public:
 };
 
 UCLASS()
-class UBoolArrayNode : public UInfoNode
+class INFONODES_API UBoolArrayNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -94,7 +94,7 @@ public:
  * 
  */
 UCLASS()
-class UStringNode : public UInfoNode
+class INFONODES_API UStringNode : public UInfoNode
 {
 	GENERATED_BODY()
 
@@ -106,7 +106,7 @@ public:
 };
 
 UCLASS()
-class UStringArrayNode : public UInfoNode
+class INFONODES_API UStringArrayNode : public UInfoNode
 {
 	GENERATED_BODY()
 

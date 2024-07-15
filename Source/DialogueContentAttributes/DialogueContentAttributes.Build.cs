@@ -9,7 +9,7 @@ public class DialogueContentAttributes : ModuleRules
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core", "DialogueSystem", "GameplayTags",
+                "Core", "DialogueSystem", "GameplayTags", "InfoNodes"
             }
         );
 

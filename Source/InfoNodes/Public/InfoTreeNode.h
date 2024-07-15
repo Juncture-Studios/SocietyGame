@@ -12,7 +12,7 @@
  * 
  */
 UCLASS()
-class AWARENESSSYSTEM_API UInfoTreeNode : public UInfoNode
+class INFONODES_API UInfoTreeNode : public UInfoNode
 {
 	GENERATED_BODY()
 

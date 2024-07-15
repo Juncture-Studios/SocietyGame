@@ -1,15 +1,15 @@
 ﻿using UnrealBuildTool;
 
-public class DialogueSystem : ModuleRules
+public class InfoNodes : ModuleRules
 {
-    public DialogueSystem(ReadOnlyTargetRules Target) : base(Target)
+    public InfoNodes(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(
             new string[]
             {
-                "Core", "InfoNodes", "NpcInfoSystem"
+                "Core", "GameplayTags"
             }
         );
 

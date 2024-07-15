@@ -3,18 +3,19 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "InfoTreeNode.h"
 #include "Components/ActorComponent.h"
-#include "NPCAwarenessComponent.generated.h"
+#include "NpcInfoComponent.generated.h"
+
+class UInfoTreeNode;
 
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable)
-class AWARENESSSYSTEM_API UNPCAwarenessComponent : public UActorComponent
+class NPCINFOSYSTEM_API UNpcInfoComponent : public UActorComponent
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this component's properties
-	UNPCAwarenessComponent();
+	UNpcInfoComponent();
 	
 	UPROPERTY(EditAnywhere, Instanced)
 	UInfoTreeNode* Context;

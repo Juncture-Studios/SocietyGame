@@ -3,6 +3,11 @@
 
 #include "InfoNode.h"
 
+bool UInfoNode::HasSameTypeAndValue(const UInfoNode* Node) const
+{
+	return BP_HasSameTypeAndValue(Node);
+}
+
 UInfoNode::UInfoNode()
 {
 	
