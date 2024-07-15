@@ -5,25 +5,18 @@
 #include "CoreMinimal.h"
 #include "DialogueContentAttribute.h"
 #include "GameplayTagContainer.h"
-#include "TagOutcomeDca.generated.h"
+#include "DeleteOutcomeDca.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class DIALOGUECONTENTATTRIBUTES_API UTagOutcomeDca : public UDialogueContentAttribute
+class DIALOGUECONTENTATTRIBUTES_API UDeleteOutcomeDca : public UDialogueContentAttribute
 {
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere)
 	TArray<FGameplayTag> Path;
-
-	//If true will fill in the entire path if it is not valid.
-	UPROPERTY(EditAnywhere)
-	bool bCreateIfNotExist;
-
-	UPROPERTY(EditAnywhere)
-	FGameplayTag Value;
 
 	virtual bool ContainsPhrase(const FString Phrase) const override;
 };

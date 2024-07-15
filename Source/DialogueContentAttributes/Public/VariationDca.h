@@ -4,7 +4,27 @@
 
 #include "CoreMinimal.h"
 #include "DialogueContentAttribute.h"
+#include "GameplayTagContainer.h"
 #include "VariationDca.generated.h"
+
+USTRUCT(BlueprintType)
+struct FVariation
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere)
+	FText Text;
+
+	//Character must have at least one of these.
+	UPROPERTY(EditAnywhere)
+	TArray<FGameplayTag> VariationTags;
+
+	UPROPERTY(EditAnywhere)
+	int32 Priority;
+
+	UPROPERTY(EditAnywhere)
+	float Weighting;
+};
 
 /**
  * 
@@ -14,7 +34,8 @@ class DIALOGUECONTENTATTRIBUTES_API UVariationDca : public UDialogueContentAttri
 {
 	GENERATED_BODY()
 
-	//Variations here.
+	UPROPERTY(EditAnywhere)
+	TArray<FVariation> Variations;
 
 	virtual bool ContainsPhrase(const FString Phrase) const override;
 };

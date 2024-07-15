@@ -26,6 +26,10 @@ class DIALOGUECONTENTATTRIBUTES_API UFloatOutcomeDca : public UDialogueContentAt
 	UPROPERTY(EditAnywhere)
 	TArray<FGameplayTag> Path;
 
+	//If true will fill in the entire path if it is not valid and the mode is set.
+	UPROPERTY(EditAnywhere)
+	bool bCreateIfNotExist;
+
 	UPROPERTY(EditAnywhere)
 	float Value;
 
