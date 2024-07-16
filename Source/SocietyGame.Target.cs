@@ -16,6 +16,6 @@ public class SocietyGameTarget : TargetRules
 
 	private void RegisterModulesCreatedByRider()
 	{
-		ExtraModuleNames.AddRange(new string[] { "DialogueSystem", "DialogueEditor", "DialogueContentAttributes", "NpcInfoSystem", "InfoNodes" });
+		ExtraModuleNames.AddRange(new string[] { "DialogueSystem", "DialogueEditor", "DialogueContentAttributes", "NpcInfoSystem", "InfoNodes", "InventorySystem" });
 	}
 }

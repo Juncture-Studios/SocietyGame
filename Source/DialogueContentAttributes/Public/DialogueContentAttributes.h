@@ -10,6 +10,16 @@ enum class EDialogueConditionType : uint8
     Requirement
 };
 
+UENUM(BlueprintType)
+enum class EDialogueNumericalComparator : uint8
+{
+    Equal,
+    GreaterThan,
+    LessThan,
+    GreaterThanOrEqual,
+    LessThanOrEqual
+};
+
 class FDialogueContentAttributesModule : public IModuleInterface
 {
 public:
